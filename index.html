@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" cotent="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>NOWLHA</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                  <li>
+                    <a href="home.html">Home</a>
+                  </li>
+                  <li>
+                    <a href="about.html">About</a>
+                  </li>
+                  <li>
+                    <a href="gallery.html">Gallery</a>
+                  </li>
+                  <li>
+                    <a href="contact.html">Contact</a>
+                  </li>
+                  <li>
+                    <a href="index.html">Login</a>
+                  </li>
+                </ul>
+              </nav>
+            
+      </header>
+<section class="parallax">
+    <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 100PX; z-index: 3;" id="text">NOWLHA</h1>
+    <img src="1.png" id="clouds1">
+    <img src="2.png" id="clouds2">
+</section>
+        <div class="container" id="container">
+            <div class="signin-signup">
+                <form name="sign-in" method="post" action="login.php" class="sign-in-form">
+                <h2 class="title">Sign in</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="username" id="username" placeholder="Username" >
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password"  name="password" id="password" placeholder="Password" >
+                </div>
+                <input type="submit" name="login" value="Login" class="btn">
+                <p class="social-text">Or Sign in with social platform</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </form>
+            <form name="sign-up" method="post" action="server.php"  class="sign-up-form">
+                <h2 class="title">Sign up</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="username" id="username" placeholder="Username" value="" required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" name="email" id="email" placeholder="Email" value="" required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="password" id="password" placeholder="Password" value="" required>
+                </div>
+                <input type="submit" name="submit" id="submit" value="Register" class="btn">
+                <p class="social-text">Or Sign up with social platform</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </form>
+            </div>
+            <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Already have an account?</h3>
+                    <p>Welcome back to our captivating art page! We're thrilled to have you here once again, ready to immerse yourself in the world of artistic inspiration. As you log in, prepare to rediscover the magic of creativity, connect with fellow art lovers, and explore a treasure trove of captivating artworks.</p>
+                    <button class="btn" id="sign-in-btn">Sign in</button>
+                </div>
+                <img src="art_online.svg" alt="" class="image">
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>Don't have an account?</h3>
+                    <p>Welcome to our vibrant art community! By joining our art page, you're stepping into a world filled with boundless creativity, inspiration, and endless possibilities.</p>
+                    <button class="btn" id="sign-up-btn">Sign up</button>
+                </div>
+                <img src="art_museum.svg" alt="" class="image">
+            </div>
+        </div>
+        </div>
+        
+        <script src="register.js"></script>
+        
+    </body>
+</html>
